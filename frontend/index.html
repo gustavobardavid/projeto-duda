@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Library Management</h1>
+
+        <!-- Books Section -->
+        <div class="mb-5">
+            <h2>Livros</h2>
+            <form id="bookForm" class="form-inline mb-3">
+                <div class="form-group mr-2">
+                    <input type="text" id="bookTitle" class="form-control" placeholder="Book Title" required>
+                </div>
+                <div class="form-group mr-2">
+                    <input type="text" id="bookAuthor" class="form-control" placeholder="Author" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Livro</button>
+            </form>
+            <ul id="bookList" class="list-group"></ul>
+        </div>
+
+        <!-- Users Section -->
+        <div class="mb-5">
+            <h2>Usuarios</h2>
+            <form id="userForm" class="form-inline mb-3">
+                <div class="form-group mr-2">
+                    <input type="text" id="userName" class="form-control" placeholder="User Name" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Usuário</button>
+            </form>
+            <ul id="userList" class="list-group"></ul>
+        </div>
+
+        <!-- Loans Section -->
+        <div class="mb-5">
+            <h2>Empréstimos</h2>
+            <form id="loanForm" class="form-inline mb-3">
+                <div class="form-group mr-2">
+                    <input type="number" id="loanBookId" class="form-control" placeholder="Book ID" required>
+                </div>
+                <div class="form-group mr-2">
+                    <input type="number" id="loanUserId" class="form-control" placeholder="User ID" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Empréstimo</button>
+            </form>
+            <ul id="loanList" class="list-group"></ul>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+   
+</body>
+<script src="script.js"></script>
+</html>
